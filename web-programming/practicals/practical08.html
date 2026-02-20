@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 8</title>
+</head>
+
+<body>
+  <h1>Output: </h1>
+  <p id="paragraph"></p>
+
+  <p id="name"></p>
+  <script>
+    const para = document.getElementById("paragraph");
+    const name = document.getElementById("name");
+    const data = {
+      name: "Saumya Kanti Sarma",
+      email: "saumyakantisarma2004@gmail.com",
+      address: "Vichumbe Panvel Maharashtra"
+    }
+    const x = JSON.stringify(data);
+    para.innerHTML = x;
+
+    const jsonString = {
+      "name": "Saumya Kanti Sarma"
+    }
+
+    name.innerHTML = jsonString.name;
+  </script>
+</body>
+
+</html>
