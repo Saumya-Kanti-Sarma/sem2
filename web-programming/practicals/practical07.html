@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 07</title>
+</head>
+
+<body>
+  <button id="btn">Click me</button>
+  <form action="submit" id="form">
+
+    <input type="text" placeholder="search..." id="input">
+    <button>Submit</button>
+  </form>
+
+  <script>
+    const btn = document.getElementById("btn");
+    const form = document.getElementById("form");
+    const input = document.getElementById("input");
+
+    btn.addEventListener("click", () => { console.log("btn is clicked") });
+    btn.addEventListener("dblclick", () => (alert("Btn double clicked")));
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      console.log("Form submit");
+    });
+    input.addEventListener("focus", () => console.log("Focussing..."));
+    input.addEventListener("blur", () => console.log("not focus..."));
+
+  </script>
+</body>
+
+</html>
