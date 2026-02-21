@@ -1,5 +1,9 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+const price = document.getElementById("price");
+const iphonePrice = document.getElementById("iphonePrice")
 
+
+price.innerHTML = "Price ₹15,000";
 // Feature 1: Add to Cart
 function addToCart(product, price) {
   cart.push({ product, price });
