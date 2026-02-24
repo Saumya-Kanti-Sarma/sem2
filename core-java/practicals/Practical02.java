@@ -73,6 +73,10 @@ public class Practical02 {
   }
 
   public static void main(String[] args) {
-    System.out.println(days(5));
+    System.out.println("Factorial of 5 is: " + factorial(5));
+    System.out.println("513 is an amstrong number: " + armstrong(513));
+    System.out.println("madam is a pallindrome: " + pallindrome("madam"));
+    System.out.println("3rd day of a week is" + days(3));
+
   }
 }
